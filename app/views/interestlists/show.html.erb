@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @interestlist.user_id %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @interestlist.project_id %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @interestlist.interest %>
+</p>
+
+<p>
+  <strong>Interesttype:</strong>
+  <%= @interestlist.interesttype %>
+</p>
+
+<%= link_to 'Edit', edit_interestlist_path(@interestlist) %> |
+<%= link_to 'Back', interestlists_path %>

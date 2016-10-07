@@ -1,0 +1,1 @@
+json.partial! "interestlists/interestlist", interestlist: @interestlist

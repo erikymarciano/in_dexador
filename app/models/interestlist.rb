@@ -1,0 +1,2 @@
+class Interestlist < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.array! @interestlists, partial: 'interestlists/interestlist', as: :interestlist

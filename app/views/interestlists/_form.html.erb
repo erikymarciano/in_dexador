@@ -1,0 +1,37 @@
+<%= form_for(interestlist) do |f| %>
+  <% if interestlist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(interestlist.errors.count, "error") %> prohibited this interestlist from being saved:</h2>
+
+      <ul>
+      <% interestlist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :project_id %>
+    <%= f.text_field :project_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :interest %>
+    <%= f.check_box :interest %>
+  </div>
+
+  <div class="field">
+    <%= f.label :interesttype %>
+    <%= f.check_box :interesttype %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
