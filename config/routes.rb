@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/feedProjects'
+
+  get 'static_pages/portfolio'
+
   get 'sessions/new'
 
   resources :interestlists
@@ -9,6 +13,7 @@ Rails.application.routes.draw do
   post '/login', to:'sessions#create'
   get '/logout', to: 'sessions#destroy'
   delete '/logout', to: 'sessions#destroy'
+  get '/feed', to: 'static_pages#feedProjects'
   
   root 'projects#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

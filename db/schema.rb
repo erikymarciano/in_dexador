@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161007000144) do
+ActiveRecord::Schema.define(version: 20161007180759) do
 
   create_table "interestlists", force: :cascade do |t|
     t.string   "user_id"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20161007000144) do
     t.integer  "owner"
     t.text     "drivelink"
     t.text     "githublink"
+    t.boolean  "approved"
   end
 
   create_table "users", force: :cascade do |t|
