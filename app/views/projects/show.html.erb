@@ -1,17 +1,18 @@
+<% @title="Projeto" %>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nome:</strong>
   <%= @project.name %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descrição:</strong>
   <%= @project.description %>
 </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Editar', edit_project_path(@project) %> |
+<%= link_to 'Voltar', projects_path %>
 
 <!--<form method="post" action="/controller/new" class="button_to">
   <div><input value="New" type="submit" /></div>
